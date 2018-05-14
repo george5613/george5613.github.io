@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="这是一篇oracle官方对Java集合框架的大纲的翻译，点击可查看原文 具体的思维导图已经在简介中给出了。 以下为本人翻译： 集合框架大纲集合框架主要包含： 集合接口(Collection interfaces) Collection 一组对象的集合.没有规定集合的有序也没有规定是否可以包含相同的元素。 Set 就是广义上的集合，规定了不能包含相同的元素，继承自Collection接口，有序和没序">
+<meta name="description" content="这是一篇oracle官方对Java集合框架的大纲的翻译，点击可查看原文 具体的思维导图已经在简介中给出了。 以下为翻译： 集合框架大纲集合框架主要包含： 集合接口 Collection 一组对象的集合.没有规定集合的有序也没有规定是否可以包含相同的元素。 Set 就是广义上的集合，规定了不能包含相同的元素，继承自Collection接口，有序和没序都有可能。 List 继承自Collection接">
 <meta name="keywords" content="Java,JavaSE,Java Collection Framework">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Java Collection Framework - Outline">
 <meta property="og:url" content="http://george5613.com/2018/05/14/Java-Collection-Framework-Outline/index.html">
 <meta property="og:site_name" content="George5613&#39;s Blog">
-<meta property="og:description" content="这是一篇oracle官方对Java集合框架的大纲的翻译，点击可查看原文 具体的思维导图已经在简介中给出了。 以下为本人翻译： 集合框架大纲集合框架主要包含： 集合接口(Collection interfaces) Collection 一组对象的集合.没有规定集合的有序也没有规定是否可以包含相同的元素。 Set 就是广义上的集合，规定了不能包含相同的元素，继承自Collection接口，有序和没序">
+<meta property="og:description" content="这是一篇oracle官方对Java集合框架的大纲的翻译，点击可查看原文 具体的思维导图已经在简介中给出了。 以下为翻译： 集合框架大纲集合框架主要包含： 集合接口 Collection 一组对象的集合.没有规定集合的有序也没有规定是否可以包含相同的元素。 Set 就是广义上的集合，规定了不能包含相同的元素，继承自Collection接口，有序和没序都有可能。 List 继承自Collection接">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-05-14T14:06:14.598Z">
+<meta property="og:updated_time" content="2018-05-14T14:12:55.360Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Java Collection Framework - Outline">
-<meta name="twitter:description" content="这是一篇oracle官方对Java集合框架的大纲的翻译，点击可查看原文 具体的思维导图已经在简介中给出了。 以下为本人翻译： 集合框架大纲集合框架主要包含： 集合接口(Collection interfaces) Collection 一组对象的集合.没有规定集合的有序也没有规定是否可以包含相同的元素。 Set 就是广义上的集合，规定了不能包含相同的元素，继承自Collection接口，有序和没序">
+<meta name="twitter:description" content="这是一篇oracle官方对Java集合框架的大纲的翻译，点击可查看原文 具体的思维导图已经在简介中给出了。 以下为翻译： 集合框架大纲集合框架主要包含： 集合接口 Collection 一组对象的集合.没有规定集合的有序也没有规定是否可以包含相同的元素。 Set 就是广义上的集合，规定了不能包含相同的元素，继承自Collection接口，有序和没序都有可能。 List 继承自Collection接">
 
 
 
@@ -420,9 +420,9 @@
       
         <p>这是一篇oracle官方对Java集合框架的大纲的翻译，<a href="https://docs.oracle.com/javase/8/docs/technotes/guides/collections/reference.html" target="_blank" rel="noopener">点击可查看原文</a></p>
 <p>具体的思维导图已经在<a href="/2018/05/14/Java-Collection-Framework-Introduction/" title="简介">简介</a>中给出了。</p>
-<p>以下为本人翻译：</p>
+<p>以下为翻译：</p>
 <p>集合框架大纲<br>集合框架主要包含：</p>
-<h4 id="集合接口-Collection-interfaces"><a href="#集合接口-Collection-interfaces" class="headerlink" title="集合接口(Collection interfaces)"></a>集合接口(Collection interfaces)</h4><ul>
+<h4 id="集合接口"><a href="#集合接口" class="headerlink" title="集合接口"></a>集合接口</h4><ul>
 <li><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html" target="_blank" rel="noopener">Collection</a> 一组对象的集合.没有规定集合的有序也没有规定是否可以包含相同的元素。</li>
 <li><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html" target="_blank" rel="noopener">Set</a> 就是广义上的集合，规定了不能包含相同的元素，继承自Collection接口，有序和没序都有可能。</li>
 <li><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html" target="_blank" rel="noopener">List</a> 继承自Collection接口，有序的集合或者说是一连串数据集合. 允许元素重复，允许通过元素下标索引。</li>
@@ -451,22 +451,26 @@
 <li><a href="https://docs.oracle.com/javase/8/docs/api/java/util/TreeMap.html" target="_blank" rel="noopener">TreeMap</a> NavigableMap接口的红黑树实现。</li>
 <li><a href="https://docs.oracle.com/javase/8/docs/api/java/util/LinkedHashMap.html" target="_blank" rel="noopener">LinkedHashMap</a> Map接口的哈希表和双重链表实现。一个效率和HashMap类似的输入有序的Map实现。在实在缓存功能这种数据结构是很有用。</li>
 </ul>
-<h4 id="包装实现类-对某些集合的实现增加一些功能特性，完全是通过静态工厂方法创建"><a href="#包装实现类-对某些集合的实现增加一些功能特性，完全是通过静态工厂方法创建" class="headerlink" title="包装实现类-对某些集合的实现增加一些功能特性，完全是通过静态工厂方法创建"></a>包装实现类-对某些集合的实现增加一些功能特性，完全是通过静态工厂方法创建</h4><ul>
+<h4 id="包装实现类"><a href="#包装实现类" class="headerlink" title="包装实现类"></a>包装实现类</h4><p>对某些集合的实现增加一些功能特性，完全是通过静态工厂方法创建</p>
+<ul>
 <li><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collections.html#unmodifiableCollection-java.util.Collection-" target="_blank" rel="noopener">Collections.unmodifiableInterface</a> 返回一个当前集合的不可修改的集合，如果用户想要修改集合内元素就会抛出一个UnsupportedOperationException。</li>
 <li><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collections.html#synchronizedCollection-java.util.Collection-" target="_blank" rel="noopener">Collections.synchronizedInterface</a> 返回一个依赖当前非线程同步集合的线程同步的集合。</li>
 <li><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collections.html#checkedCollection-java.util.Collection-java.lang.Class-" target="_blank" rel="noopener">Collections.checkedInterface</a> 返回一个对应动态类型检测的集合，如果客户端想要添加一个错误类型的type会抛出一个ClassCastException异常，一般的程序都会提供语言层的静态类型检测，不过这种静态类型的检测是可以绕开的，而动态的类型检测消除了这种危险性。 </li>
 </ul>
-<h4 id="适配器接口实现-适配一个集合的实现到另一个实现。"><a href="#适配器接口实现-适配一个集合的实现到另一个实现。" class="headerlink" title="适配器接口实现 适配一个集合的实现到另一个实现。"></a>适配器接口实现 适配一个集合的实现到另一个实现。</h4><ul>
+<h4 id="适配器接口实现"><a href="#适配器接口实现" class="headerlink" title="适配器接口实现"></a>适配器接口实现</h4><p>适配一个集合的实现到另一个实现。</p>
+<ul>
 <li><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collections.html#newSetFromMap-java.util.Map-" target="_blank" rel="noopener">newSetFromMap(Map)</a> 从一个通用Map实现创建一个通用的Set实现</li>
 <li><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collections.html#asLifoQueue-java.util.Deque-" target="_blank" rel="noopener">asLifoQueue(Deque)</a> 返回一个Deque单具有后入先出队列的实现</li>
 </ul>
-<h4 id="便捷实现-集合接口的高性能的便捷实现。"><a href="#便捷实现-集合接口的高性能的便捷实现。" class="headerlink" title="便捷实现 集合接口的高性能的便捷实现。"></a>便捷实现 集合接口的高性能的便捷实现。</h4><ul>
+<h4 id="便捷实现"><a href="#便捷实现" class="headerlink" title="便捷实现"></a>便捷实现</h4><p>集合接口的高性能的便捷实现。</p>
+<ul>
 <li><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Arrays.html#asList-T...-" target="_blank" rel="noopener">Arrays.asList</a> 让一个数组具有list的实现。</li>
 <li><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collections.html#emptySet--" target="_blank" rel="noopener">emptySet</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collections.html#emptyList--" target="_blank" rel="noopener">emptyList</a> 和 <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collections.html#emptyMap--" target="_blank" rel="noopener">emptyMap</a> 返回一个永远不变的空Set，空List或空Map。</li>
 <li><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collections.html#singleton-java.lang.Object-" target="_blank" rel="noopener">singleton</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collections.html#singletonList-java.lang.Object-" target="_blank" rel="noopener">singletonList</a> 和 <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collections.html#singletonMap-K-V-" target="_blank" rel="noopener">singletonMap</a> 返回一个永远不变的单例的 set, list, 或map，只包含特定的对象(或者键-值)。</li>
 <li><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collections.html#nCopies-int-T-" target="_blank" rel="noopener">nCopies</a> 返回一个永远不变list包含N个指定对象的拷贝。</li>
 </ul>
-<h4 id="遗留实现-老的集合类翻新成被新的实现"><a href="#遗留实现-老的集合类翻新成被新的实现" class="headerlink" title="遗留实现 老的集合类翻新成被新的实现"></a>遗留实现 老的集合类翻新成被新的实现</h4><ul>
+<h4 id="遗留实现"><a href="#遗留实现" class="headerlink" title="遗留实现"></a>遗留实现</h4><p>老的集合类翻新成被新的实现</p>
+<ul>
 <li><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Vector.html" target="_blank" rel="noopener">Vector</a> List接口的线程同步和可重新拓展大小数组的实现，包含了遗留的一些方法。</li>
 <li><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Hashtable.html" target="_blank" rel="noopener">Hashtable</a> Map接口的线程同步的的哈希表实现，不允许null的键或值，包含了遗留的一些方法。</li>
 </ul>
@@ -499,7 +503,8 @@
 <li><a href="https://docs.oracle.com/javase/8/docs/api/java/util/AbstractQueue.html" target="_blank" rel="noopener">AbstractQueue</a> 抽象Queue实现。</li>
 <li><a href="https://docs.oracle.com/javase/8/docs/api/java/util/AbstractMap.html" target="_blank" rel="noopener">AbstractMap</a> 抽象Map实现。</li>
 </ul>
-<h4 id="算法-Collections-类包含这些有用的静态方法。"><a href="#算法-Collections-类包含这些有用的静态方法。" class="headerlink" title="算法 Collections 类包含这些有用的静态方法。"></a>算法 <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collections.html" target="_blank" rel="noopener">Collections</a> 类包含这些有用的静态方法。</h4><ul>
+<h4 id="算法-Collections"><a href="#算法-Collections" class="headerlink" title="算法 Collections"></a>算法 <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collections.html" target="_blank" rel="noopener">Collections</a></h4><p>类包含这些有用的静态方法。</p>
+<ul>
 <li><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collections.html#sort-java.util.List-" target="_blank" rel="noopener">sort(List)</a> 使用归并排序对列表进行排序，它的性能平均情况下的相当于一个高质量的快速排序，保证O(n*logn)的性能(快速排序不能保证)，稳定(快速排序是不稳定的)。稳定排序是不重排相等元素的排序。 </li>
 <li><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collections.html#binarySearch-java.util.List-T-" target="_blank" rel="noopener">binarySearch(List, Object)</a> 在有序列表中通过二分查找算法寻找对应元素。</li>
 <li><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collections.html#reverse-java.util.List-" target="_blank" rel="noopener">reverse(List)</a> 翻转一个列表的元素顺序。</li>
@@ -742,7 +747,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#集合接口-Collection-interfaces"><span class="nav-number">1.</span> <span class="nav-text">集合接口(Collection interfaces)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#多用途接口实现"><span class="nav-number">2.</span> <span class="nav-text">多用途接口实现</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#包装实现类-对某些集合的实现增加一些功能特性，完全是通过静态工厂方法创建"><span class="nav-number">3.</span> <span class="nav-text">包装实现类-对某些集合的实现增加一些功能特性，完全是通过静态工厂方法创建</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#适配器接口实现-适配一个集合的实现到另一个实现。"><span class="nav-number">4.</span> <span class="nav-text">适配器接口实现 适配一个集合的实现到另一个实现。</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#便捷实现-集合接口的高性能的便捷实现。"><span class="nav-number">5.</span> <span class="nav-text">便捷实现 集合接口的高性能的便捷实现。</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#遗留实现-老的集合类翻新成被新的实现"><span class="nav-number">6.</span> <span class="nav-text">遗留实现 老的集合类翻新成被新的实现</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#特殊目的实现"><span class="nav-number">7.</span> <span class="nav-text">特殊目的实现</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#并行实现"><span class="nav-number">8.</span> <span class="nav-text">并行实现</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#抽象实现"><span class="nav-number">9.</span> <span class="nav-text">抽象实现</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#算法-Collections-类包含这些有用的静态方法。"><span class="nav-number">10.</span> <span class="nav-text">算法 Collections 类包含这些有用的静态方法。</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#基础架构"><span class="nav-number">11.</span> <span class="nav-text">基础架构</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#数组工具"><span class="nav-number">12.</span> <span class="nav-text">数组工具</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#集合接口"><span class="nav-number">1.</span> <span class="nav-text">集合接口</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#多用途接口实现"><span class="nav-number">2.</span> <span class="nav-text">多用途接口实现</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#包装实现类"><span class="nav-number">3.</span> <span class="nav-text">包装实现类</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#适配器接口实现"><span class="nav-number">4.</span> <span class="nav-text">适配器接口实现</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#便捷实现"><span class="nav-number">5.</span> <span class="nav-text">便捷实现</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#遗留实现"><span class="nav-number">6.</span> <span class="nav-text">遗留实现</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#特殊目的实现"><span class="nav-number">7.</span> <span class="nav-text">特殊目的实现</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#并行实现"><span class="nav-number">8.</span> <span class="nav-text">并行实现</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#抽象实现"><span class="nav-number">9.</span> <span class="nav-text">抽象实现</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#算法-Collections"><span class="nav-number">10.</span> <span class="nav-text">算法 Collections</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#基础架构"><span class="nav-number">11.</span> <span class="nav-text">基础架构</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#数组工具"><span class="nav-number">12.</span> <span class="nav-text">数组工具</span></a></li></ol></div>
             
 
           </div>
