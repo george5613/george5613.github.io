@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="这是一篇oracle官方对Java集合框架的大纲的翻译，点击可查看原文 具体的思维导图已经在简介中给出了。 以下为本人翻译： 集合框架大纲集合框架主要包含：  集合接口(Collection interfaces) Collection 一组对象的集合.没有规定集合的有序也没有规定是否可以包含相同的元素。 Set 就是广义上的集合，规定了不能包含相同的元素，继承自Collection接口，有序和没">
+<meta name="description" content="这是一篇oracle官方对Java集合框架的大纲的翻译，点击可查看原文 具体的思维导图已经在简介中给出了。 以下为本人翻译： 集合框架大纲集合框架主要包含： 集合接口(Collection interfaces) Collection 一组对象的集合.没有规定集合的有序也没有规定是否可以包含相同的元素。 Set 就是广义上的集合，规定了不能包含相同的元素，继承自Collection接口，有序和没序">
 <meta name="keywords" content="Java,JavaSE,Java Collection Framework">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Java Collection Framework - Outline">
 <meta property="og:url" content="http://george5613.com/2018/05/14/Java-Collection-Framework-Outline/index.html">
 <meta property="og:site_name" content="George5613&#39;s Blog">
-<meta property="og:description" content="这是一篇oracle官方对Java集合框架的大纲的翻译，点击可查看原文 具体的思维导图已经在简介中给出了。 以下为本人翻译： 集合框架大纲集合框架主要包含：  集合接口(Collection interfaces) Collection 一组对象的集合.没有规定集合的有序也没有规定是否可以包含相同的元素。 Set 就是广义上的集合，规定了不能包含相同的元素，继承自Collection接口，有序和没">
+<meta property="og:description" content="这是一篇oracle官方对Java集合框架的大纲的翻译，点击可查看原文 具体的思维导图已经在简介中给出了。 以下为本人翻译： 集合框架大纲集合框架主要包含： 集合接口(Collection interfaces) Collection 一组对象的集合.没有规定集合的有序也没有规定是否可以包含相同的元素。 Set 就是广义上的集合，规定了不能包含相同的元素，继承自Collection接口，有序和没序">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-05-14T09:47:26.352Z">
+<meta property="og:updated_time" content="2018-05-14T14:06:14.598Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Java Collection Framework - Outline">
-<meta name="twitter:description" content="这是一篇oracle官方对Java集合框架的大纲的翻译，点击可查看原文 具体的思维导图已经在简介中给出了。 以下为本人翻译： 集合框架大纲集合框架主要包含：  集合接口(Collection interfaces) Collection 一组对象的集合.没有规定集合的有序也没有规定是否可以包含相同的元素。 Set 就是广义上的集合，规定了不能包含相同的元素，继承自Collection接口，有序和没">
+<meta name="twitter:description" content="这是一篇oracle官方对Java集合框架的大纲的翻译，点击可查看原文 具体的思维导图已经在简介中给出了。 以下为本人翻译： 集合框架大纲集合框架主要包含： 集合接口(Collection interfaces) Collection 一组对象的集合.没有规定集合的有序也没有规定是否可以包含相同的元素。 Set 就是广义上的集合，规定了不能包含相同的元素，继承自Collection接口，有序和没序">
 
 
 
@@ -422,8 +422,7 @@
 <p>具体的思维导图已经在<a href="/2018/05/14/Java-Collection-Framework-Introduction/" title="简介">简介</a>中给出了。</p>
 <p>以下为本人翻译：</p>
 <p>集合框架大纲<br>集合框架主要包含：</p>
-<ul>
-<li>集合接口(Collection interfaces)<ul>
+<h4 id="集合接口-Collection-interfaces"><a href="#集合接口-Collection-interfaces" class="headerlink" title="集合接口(Collection interfaces)"></a>集合接口(Collection interfaces)</h4><ul>
 <li><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html" target="_blank" rel="noopener">Collection</a> 一组对象的集合.没有规定集合的有序也没有规定是否可以包含相同的元素。</li>
 <li><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Set.html" target="_blank" rel="noopener">Set</a> 就是广义上的集合，规定了不能包含相同的元素，继承自Collection接口，有序和没序都有可能。</li>
 <li><a href="https://docs.oracle.com/javase/8/docs/api/java/util/List.html" target="_blank" rel="noopener">List</a> 继承自Collection接口，有序的集合或者说是一连串数据集合. 允许元素重复，允许通过元素下标索引。</li>
@@ -440,8 +439,7 @@
 <li><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ConcurrentMap.html" target="_blank" rel="noopener">ConcurrentMap</a> 一个添加了原子性的putIfAbsent，remove, replace操作的Map。</li>
 <li><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ConcurrentNavigableMap.html" target="_blank" rel="noopener">ConcurrentNavigableMap</a> 集合了ConcurrentMap和NavigableMap的特性。</li>
 </ul>
-</li>
-<li>多用途接口实现<ul>
+<h4 id="多用途接口实现"><a href="#多用途接口实现" class="headerlink" title="多用途接口实现"></a>多用途接口实现</h4><ul>
 <li><a href="https://docs.oracle.com/javase/8/docs/api/java/util/HashSet.html" target="_blank" rel="noopener">HashSet</a> 用哈希表扩展Set接口的实现，最全面的Set接口实现。</li>
 <li><a href="https://docs.oracle.com/javase/8/docs/api/java/util/TreeSet.html" target="_blank" rel="noopener">TreeSet</a> NavigableSet的红黑树实现。</li>
 <li><a href="https://docs.oracle.com/javase/8/docs/api/java/util/LinkedHashSet.html" target="_blank" rel="noopener">LinkedHashSet</a> Set接口的链表和哈希表实现，一个和HashSet效率相似的有序输入Set实现。</li>
@@ -453,31 +451,26 @@
 <li><a href="https://docs.oracle.com/javase/8/docs/api/java/util/TreeMap.html" target="_blank" rel="noopener">TreeMap</a> NavigableMap接口的红黑树实现。</li>
 <li><a href="https://docs.oracle.com/javase/8/docs/api/java/util/LinkedHashMap.html" target="_blank" rel="noopener">LinkedHashMap</a> Map接口的哈希表和双重链表实现。一个效率和HashMap类似的输入有序的Map实现。在实在缓存功能这种数据结构是很有用。</li>
 </ul>
-</li>
-<li>包装实现类-对某些集合的实现增加一些功能特性，完全是通过静态工厂方法创建<ul>
+<h4 id="包装实现类-对某些集合的实现增加一些功能特性，完全是通过静态工厂方法创建"><a href="#包装实现类-对某些集合的实现增加一些功能特性，完全是通过静态工厂方法创建" class="headerlink" title="包装实现类-对某些集合的实现增加一些功能特性，完全是通过静态工厂方法创建"></a>包装实现类-对某些集合的实现增加一些功能特性，完全是通过静态工厂方法创建</h4><ul>
 <li><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collections.html#unmodifiableCollection-java.util.Collection-" target="_blank" rel="noopener">Collections.unmodifiableInterface</a> 返回一个当前集合的不可修改的集合，如果用户想要修改集合内元素就会抛出一个UnsupportedOperationException。</li>
 <li><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collections.html#synchronizedCollection-java.util.Collection-" target="_blank" rel="noopener">Collections.synchronizedInterface</a> 返回一个依赖当前非线程同步集合的线程同步的集合。</li>
 <li><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collections.html#checkedCollection-java.util.Collection-java.lang.Class-" target="_blank" rel="noopener">Collections.checkedInterface</a> 返回一个对应动态类型检测的集合，如果客户端想要添加一个错误类型的type会抛出一个ClassCastException异常，一般的程序都会提供语言层的静态类型检测，不过这种静态类型的检测是可以绕开的，而动态的类型检测消除了这种危险性。 </li>
 </ul>
-</li>
-<li>适配器接口实现 适配一个集合的实现到另一个实现。<ul>
+<h4 id="适配器接口实现-适配一个集合的实现到另一个实现。"><a href="#适配器接口实现-适配一个集合的实现到另一个实现。" class="headerlink" title="适配器接口实现 适配一个集合的实现到另一个实现。"></a>适配器接口实现 适配一个集合的实现到另一个实现。</h4><ul>
 <li><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collections.html#newSetFromMap-java.util.Map-" target="_blank" rel="noopener">newSetFromMap(Map)</a> 从一个通用Map实现创建一个通用的Set实现</li>
 <li><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collections.html#asLifoQueue-java.util.Deque-" target="_blank" rel="noopener">asLifoQueue(Deque)</a> 返回一个Deque单具有后入先出队列的实现</li>
 </ul>
-</li>
-<li>便捷实现 集合接口的高性能的便捷实现。<ul>
+<h4 id="便捷实现-集合接口的高性能的便捷实现。"><a href="#便捷实现-集合接口的高性能的便捷实现。" class="headerlink" title="便捷实现 集合接口的高性能的便捷实现。"></a>便捷实现 集合接口的高性能的便捷实现。</h4><ul>
 <li><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Arrays.html#asList-T...-" target="_blank" rel="noopener">Arrays.asList</a> 让一个数组具有list的实现。</li>
 <li><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collections.html#emptySet--" target="_blank" rel="noopener">emptySet</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collections.html#emptyList--" target="_blank" rel="noopener">emptyList</a> 和 <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collections.html#emptyMap--" target="_blank" rel="noopener">emptyMap</a> 返回一个永远不变的空Set，空List或空Map。</li>
 <li><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collections.html#singleton-java.lang.Object-" target="_blank" rel="noopener">singleton</a>, <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collections.html#singletonList-java.lang.Object-" target="_blank" rel="noopener">singletonList</a> 和 <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collections.html#singletonMap-K-V-" target="_blank" rel="noopener">singletonMap</a> 返回一个永远不变的单例的 set, list, 或map，只包含特定的对象(或者键-值)。</li>
 <li><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collections.html#nCopies-int-T-" target="_blank" rel="noopener">nCopies</a> 返回一个永远不变list包含N个指定对象的拷贝。</li>
 </ul>
-</li>
-<li>遗留实现 老的集合类翻新成被新的实现<ul>
+<h4 id="遗留实现-老的集合类翻新成被新的实现"><a href="#遗留实现-老的集合类翻新成被新的实现" class="headerlink" title="遗留实现 老的集合类翻新成被新的实现"></a>遗留实现 老的集合类翻新成被新的实现</h4><ul>
 <li><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Vector.html" target="_blank" rel="noopener">Vector</a> List接口的线程同步和可重新拓展大小数组的实现，包含了遗留的一些方法。</li>
 <li><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Hashtable.html" target="_blank" rel="noopener">Hashtable</a> Map接口的线程同步的的哈希表实现，不允许null的键或值，包含了遗留的一些方法。</li>
 </ul>
-</li>
-<li>特殊目的实现<ul>
+<h4 id="特殊目的实现"><a href="#特殊目的实现" class="headerlink" title="特殊目的实现"></a>特殊目的实现</h4><ul>
 <li><a href="https://docs.oracle.com/javase/8/docs/api/java/util/WeakHashMap.html" target="_blank" rel="noopener">WeakHashMap</a> 一个只储存键的虚引用的Map实现，只存储键的虚引用让java垃圾收集器可以回收那些在WeakHashMap外部不再有引用的键值对。这是类是对虚引用特性最简单的运用，它对于实现注册表类似的数据结构非常有用，因为当一个条目的键不再被任何线程访问时，它的键就可以被消除了。</li>
 <li><a href="https://docs.oracle.com/javase/8/docs/api/java/util/IdentityHashMap.html" target="_blank" rel="noopener">IdentityHashMap</a> 基于哈希表的身份Map，这个类在用于对象拓扑图的转换时很有用(类似序列化或深拷贝)要执行这些转换，您必须维护一个基于身份的“节点表”，它跟踪哪些对象已经被看到了。IdentityHashMap也被用于维护对象的元信息映射动态调试器和其他类似系统中。最后IdentityHashMap在防止蓄意欺骗equal()造成的“欺骗攻击”方面很有用(IdentityHashMap从不对内部的key调用equal()方法)，还有一个额外的好处这个实现执行效率很高。</li>
 <li><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/CopyOnWriteArrayList.html" target="_blank" rel="noopener">CopyOnWriteArrayList</a> 一个copy-on-write数组的列表实现，所有的修改操作（如添加、设置、删除）都是通过生成一个新的数组复制来实现。不需要线程同步，即使是在迭代中迭代器也绝不会抛出ConcurrentModificationException。此实现非常适合维护事件处理列表（其中更改很少，遍历频繁且可能耗时）。</li>
@@ -485,8 +478,7 @@
 <li><a href="https://docs.oracle.com/javase/8/docs/api/java/util/EnumSet.html" target="_blank" rel="noopener">EnumSet</a> 一种基于Bit Vector的高性能集合实现，每一个EnumSet实例的所有元素都必须是一个枚举类型。</li>
 <li><a href="https://docs.oracle.com/javase/8/docs/api/java/util/EnumMap.html" target="_blank" rel="noopener">EnumMap</a> 一种基于数组的高性能Map实现，每一个EnumMap实例的所有键必须是一个枚举类型。</li>
 </ul>
-</li>
-<li>并行实现<ul>
+<h4 id="并行实现"><a href="#并行实现" class="headerlink" title="并行实现"></a>并行实现</h4><ul>
 <li><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ConcurrentLinkedQueue.html" target="_blank" rel="noopener">ConcurrentLinkedQueue</a> 基于链接节点的无边界先入先出队列。</li>
 <li><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/LinkedBlockingQueue.html" target="_blank" rel="noopener">LinkedBlockingQueue</a> 一个可选的基于链接节点的有界FIFO阻塞队列。</li>
 <li><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ArrayBlockingQueue.html" target="_blank" rel="noopener">ArrayBlockingQueue</a> 基于数组的有界FIFO阻塞队列。</li>
@@ -499,8 +491,7 @@
 <li><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ConcurrentSkipListSet.html" target="_blank" rel="noopener">ConcurrentSkipListSet</a> NavigableSet接口的跳跃表实现。</li>
 <li><a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ConcurrentSkipListMap.html" target="_blank" rel="noopener">ConcurrentSkipListMap</a> ConcurrentNavigableMap接口的跳跃表实现。</li>
 </ul>
-</li>
-<li>抽象实现<ul>
+<h4 id="抽象实现"><a href="#抽象实现" class="headerlink" title="抽象实现"></a>抽象实现</h4><ul>
 <li><a href="https://docs.oracle.com/javase/8/docs/api/java/util/AbstractCollection.html" target="_blank" rel="noopener">AbstractCollection</a> 抽象Collection实现表示既不是Set也不是List(类似一个bag或者multiset)。</li>
 <li><a href="https://docs.oracle.com/javase/8/docs/api/java/util/AbstractSet.html" target="_blank" rel="noopener">AbstractSet</a> 抽象Set实现。</li>
 <li><a href="https://docs.oracle.com/javase/8/docs/api/java/util/AbstractList.html" target="_blank" rel="noopener">AbstractList</a> 基于随机访问数据存储（如array）的抽象List实现。</li>
@@ -508,8 +499,7 @@
 <li><a href="https://docs.oracle.com/javase/8/docs/api/java/util/AbstractQueue.html" target="_blank" rel="noopener">AbstractQueue</a> 抽象Queue实现。</li>
 <li><a href="https://docs.oracle.com/javase/8/docs/api/java/util/AbstractMap.html" target="_blank" rel="noopener">AbstractMap</a> 抽象Map实现。</li>
 </ul>
-</li>
-<li>算法 <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collections.html" target="_blank" rel="noopener">Collections</a> 类包含这些有用的静态方法。<ul>
+<h4 id="算法-Collections-类包含这些有用的静态方法。"><a href="#算法-Collections-类包含这些有用的静态方法。" class="headerlink" title="算法 Collections 类包含这些有用的静态方法。"></a>算法 <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collections.html" target="_blank" rel="noopener">Collections</a> 类包含这些有用的静态方法。</h4><ul>
 <li><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collections.html#sort-java.util.List-" target="_blank" rel="noopener">sort(List)</a> 使用归并排序对列表进行排序，它的性能平均情况下的相当于一个高质量的快速排序，保证O(n*logn)的性能(快速排序不能保证)，稳定(快速排序是不稳定的)。稳定排序是不重排相等元素的排序。 </li>
 <li><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collections.html#binarySearch-java.util.List-T-" target="_blank" rel="noopener">binarySearch(List, Object)</a> 在有序列表中通过二分查找算法寻找对应元素。</li>
 <li><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collections.html#reverse-java.util.List-" target="_blank" rel="noopener">reverse(List)</a> 翻转一个列表的元素顺序。</li>
@@ -527,8 +517,7 @@
 <li><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collections.html#disjoint-java.util.Collection-java.util.Collection-" target="_blank" rel="noopener">disjoint(Collection, Collection)</a>确定两个集合是否是不相交的，换句话说，它们是否不包含公共元素。</li>
 <li><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collections.html#addAll-java.util.Collection-T...-" target="_blank" rel="noopener">addAll(Collection&lt;? super T&gt;, T…)</a> 将指定数组中的所有元素添加到指定集合中。</li>
 </ul>
-</li>
-<li>基础架构<ul>
+<h4 id="基础架构"><a href="#基础架构" class="headerlink" title="基础架构"></a>基础架构</h4><ul>
 <li>Iterators 类似我们熟悉的Enumeration接口，但是更为强大，并且优化了命名<ul>
 <li><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Iterator.html" target="_blank" rel="noopener">Iterator</a> 除了包含Enumeration接口的功能之外，还允许用户在具有良好定义的语义层面的集合中移除元素。</li>
 <li><a href="https://docs.oracle.com/javase/8/docs/api/java/util/ListIterator.html" target="_blank" rel="noopener">ListIterator</a> 列表中使用的迭代器，除了包含迭代器接口的功能外，还支持双向迭代、元素替换、元素插入和索引检索功能。</li>
@@ -549,11 +538,8 @@
 </ul>
 </li>
 </ul>
-</li>
-<li>数组工具<ul>
+<h4 id="数组工具"><a href="#数组工具" class="headerlink" title="数组工具"></a>数组工具</h4><ul>
 <li><a href="https://docs.oracle.com/javase/8/docs/api/java/util/Arrays.html" target="_blank" rel="noopener">Arrays</a> 包含排序、搜索、比较、散列、复制、调整大小、转换为字符串，填充对象数组等静态方法。 </li>
-</ul>
-</li>
 </ul>
 
       
@@ -656,8 +642,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -737,6 +732,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#集合接口-Collection-interfaces"><span class="nav-number">1.</span> <span class="nav-text">集合接口(Collection interfaces)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#多用途接口实现"><span class="nav-number">2.</span> <span class="nav-text">多用途接口实现</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#包装实现类-对某些集合的实现增加一些功能特性，完全是通过静态工厂方法创建"><span class="nav-number">3.</span> <span class="nav-text">包装实现类-对某些集合的实现增加一些功能特性，完全是通过静态工厂方法创建</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#适配器接口实现-适配一个集合的实现到另一个实现。"><span class="nav-number">4.</span> <span class="nav-text">适配器接口实现 适配一个集合的实现到另一个实现。</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#便捷实现-集合接口的高性能的便捷实现。"><span class="nav-number">5.</span> <span class="nav-text">便捷实现 集合接口的高性能的便捷实现。</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#遗留实现-老的集合类翻新成被新的实现"><span class="nav-number">6.</span> <span class="nav-text">遗留实现 老的集合类翻新成被新的实现</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#特殊目的实现"><span class="nav-number">7.</span> <span class="nav-text">特殊目的实现</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#并行实现"><span class="nav-number">8.</span> <span class="nav-text">并行实现</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#抽象实现"><span class="nav-number">9.</span> <span class="nav-text">抽象实现</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#算法-Collections-类包含这些有用的静态方法。"><span class="nav-number">10.</span> <span class="nav-text">算法 Collections 类包含这些有用的静态方法。</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#基础架构"><span class="nav-number">11.</span> <span class="nav-text">基础架构</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#数组工具"><span class="nav-number">12.</span> <span class="nav-text">数组工具</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -925,6 +936,11 @@
     
 <!-- END LOCAL -->
 
+    
+      <style>
+        a.gitment-editor-footer-tip { display: none; }
+        .gitment-container.gitment-footer-container { display: none; }
+      </style>
     
 
     
